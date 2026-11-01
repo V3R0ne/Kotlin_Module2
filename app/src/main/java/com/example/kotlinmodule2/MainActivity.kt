@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.kotlinmodule2.task01.Hello
+import com.example.kotlinmodule2.task08.WaterTracker
 import com.example.kotlinmodule2.ui.theme.KotlinModule2Theme
 
 class MainActivity : ComponentActivity() {
@@ -18,8 +18,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             KotlinModule2Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Hello(
-                        name = null,
+                    WaterTracker(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
